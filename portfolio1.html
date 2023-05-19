@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Trip System</title>
+
+    <!-- style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-lightbg-white py-3 border-bottom">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#"><span class="fw-bolder">Wahyu Norrudin</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link contact-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PORTFOLIO DETAIL SECTION -->
+    <section id="portfolio-detail" class="py-3">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8">
+                    <a href="index.html" class="text-decoration-none small text-secondary">
+                        < Back to Home</a>
+                            <h2 class="portfolio-title my-3">Business Trip System</h2>
+                            <a class="text-decoration-none purple-color"
+                                href="https://bustrip-app.000webhostapp.com/"><i class="bi bi-link-45deg"></i> View
+                                demo</a>
+                            <div class="my-4"><img class="img-fluid" src="assets/img/work-1.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="row mt-3 d-flex justify-content-center">
+                <div class="col-md-8">
+                    <h5 class="mb-2"><strong>Overview</strong></h5>
+                    <p>This application is used to manage employee business trips in a company. This application is
+                        intended to record business trips and the nominal amount of allowance given to employees while
+                        on duty.</p>
+                    <h5 class="mb-2"><strong>Features</strong></h5>
+                    <p>Each user has access in the form of a username and password. Admin can set the role for each user
+                        to be <mark>EMPLOYEE</mark> or <mark>HRD</mark></p>
+                    <p>Employees can apply for business trip by submitting: the purpose of the trip, date of departure,
+                        date of return, city of departure, destination city, and duration</p>
+                    <p>The duration of a business trip is <mark>calculated automatically</mark> using the departure and
+                        return dates
+                    </p>
+                    <p>The data of the city of origin and destination is managed by the HRD
+                        in the form of city master data. This data includes the city name, latitude and longitude
+                        coordinates, the province name of the city, the island name where the city is located, and
+                        whether the city is located abroad or not.</p>
+                    <p>The distances are calculated from the lat-lon of the city of origin and destination, which is
+                        obtained automatically from <mark>Geocoding API.</mark></p>
+                    <p>Employees will get business trip allowance per day accordingly with its distance classification,
+                        where:
+                    <div>
+                        <ul>
+                            <li>Distance 0 – 60km: no allowance</li>
+                            <li>Above 60km but in one province get IDR 200,000 per day</li>
+                            <li>Over 60km outside the province but still on one island get IDR 250,000</li>
+                            <li>Over 60km outside the province and outside the island get IDR 300,000</li>
+                            </u>
+                    </div>
+                    </p>
+                    <p>The distance is <mark>automatically calculated</mark> from the latitude-longitude of the origin
+                        and
+                        destination cities.</p>
+                    <p>Every business trip request by an employee must be processed and approved by the HRD. When the
+                        business trip request is approved by the HRD, the <mark>total amount of money</mark> that must
+                        be paid is also displayed.</p>
+                    <p>Every employee can view the status of their business trip request through the employee dashboard,
+                        whether it is <mark>pending, approved, or rejected.</mark></p>
+                    <p>The HRD can view the <mark>history</mark> of business trip requests that have been approved or
+                        rejected by them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact pt-5 pb-3 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-white">Contact me</h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="mailto:wahyunorrudin1@gmail.com" class="text-decoration-none me-3"><i
+                                class="fs-3 bi bi-envelope"></i></a>
+                        <a href="https://wa.me/6285733917757" class="text-decoration-none me-3"><i
+                                class="fs-3 bi bi-whatsapp"></i></a>
+                        <a href="https://id.linkedin.com/in/wahyu-norrudin-6025001bb"
+                            class="text-decoration-none me-3"><i class="fs-3 bi bi-linkedin"></i></a>
+                        <a href="https://github.com/whynoord" class="text-decoration-none"><i
+                                class="fs-3 bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <br>
+            <hr class="text-secondary">
+            <div class="row">
+                <div class="col text-center">
+                    <span class="text-secondary">Copyright 2023 &copy; Wahyu Norrudin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Attach click event handler to navbar links
+            $('contact-link').on('click', function (event) {
+                // Prevent the default behavior of the link
+                event.preventDefault();
+
+                // Get the target section's ID from the link's href attribute
+                var targetId = $(this).attr('href');
+
+                // Scroll smoothly to the target section
+                $('html, body').animate({
+                    scrollTop: $(targetId).offset().top - ($(window).height() / 2) + ($(targetId).height() / 2)
+                }, 10);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
